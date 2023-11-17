@@ -350,11 +350,13 @@
 				});
 
 					var form = document.createElement('form');
-					form.innerHTML = '<label for="inputField">Введіть елемент нумерованого списку:</label>' +
+				form.innerHTML = '<label for="inputField">Введіть елемент нумерованого списку:</label>' +
+								'<div class="input-container">' +
 									'<input type="text" id="inputField">' +
-									'<button type="button" onclick="submitForm(\'' + selectedBlockId + '\')">Зберегти</button>';
+									'<button type="button" onclick="submitForm(\'' + selectedBlockId + '\')">Зберегти</button>' +
+								'</div>';
+				formContainer.appendChild(form);
 
-					formContainer.appendChild(form);
 			}
 
 

@@ -32,9 +32,6 @@ a{
   width: 150px;
   height: auto;
 
-  @media (max-width: 600px) {
-    width: 80px;
-  }
 }
 
 #album{
@@ -50,6 +47,7 @@ a{
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   background-color: #A01D26;
   grid-row: 1/7;
   grid-column: 1/-1;
@@ -112,6 +110,7 @@ a{
   background-color: #A01D26;
   text-align: center;
   justify-content: center;
+  
   grid-row: 19/-1;
   grid-column: 1/-1;
 }
@@ -177,4 +176,37 @@ a{
   flex-shrink: 0;
   margin-top: 4.17%;
   margin-bottom: 4.17%;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 200px;
+  margin: 0 auto;
+}
+
+
+
+@media (max-width: 600px) {
+  html {
+    font-size: 12px;
+  }
+  #block5 {
+    font-size: 12px;
+  }
+  #logo {
+    width: 80px;
+  }
+  #album {
+    width: 180px;
+  }
+  .input-container {
+    width: 100px;
+  }
+  label {
+    display: inline-block; 
+    width: 100px;
+  }
 }
