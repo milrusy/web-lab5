@@ -187,7 +187,9 @@ a{
   margin: 0 auto;
 }
 
-
+label {
+  text-align: center;
+}
 
 @media (max-width: 600px) {
   html {
@@ -200,13 +202,13 @@ a{
     width: 80px;
   }
   #album {
-    width: 180px;
+    width: 160px;
   }
   .input-container {
     width: 100px;
   }
   label {
     display: inline-block; 
-    width: 100px;
+    max-width: 80px;
   }
 }
