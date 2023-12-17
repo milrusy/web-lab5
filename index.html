@@ -232,6 +232,7 @@
 			window.addEventListener('load', function () {
 				swapBlocks();
 				showAlert();
+				localStorage.clear();
 				var maxDigit = getCookie("maxDigit");
 				if (maxDigit) {
 					deleteCookiesAndReload();
